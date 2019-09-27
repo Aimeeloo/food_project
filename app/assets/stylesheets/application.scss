@@ -14,26 +14,14 @@
  *= require_self
  */
  
- $theme-colors: (
-//    "primary": rgb(38, 119, 211),
-//    "secondary": rgb(255, 115, 72),
-//    "success": #015668,
-//    "info": rgb(127, 192, 97),
-//    "warning": rgb(228, 206, 112),
-//    "danger": #06648C,
-   "light": rgb(233, 233, 233),
-//    "dark": #c76b6b,
- );
-
- .container_body{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #ffffff !important;
-}
-
-.content{
-  margin: 20px;
-}
-
+//  $theme-colors: (
+// //    "primary": rgb(38, 119, 211),
+// //    "secondary": rgb(255, 115, 72),
+// //    "success": #015668,
+// //    "info": rgb(127, 192, 97),
+// //    "warning": rgb(228, 206, 112),
+// //    "danger": #06648C,
+//    "light": rgb(233, 233, 233),
+// //    "dark": #c76b6b,
+//  );
  @import "bootstrap";
