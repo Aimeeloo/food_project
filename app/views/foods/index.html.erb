@@ -1,19 +1,11 @@
-</head>
-<%= flash[:notice] %>
-<h1>首頁</h1>
-<% if user_signed_in? %>
-  <%= link_to "會員中心", '#', class: 'navlink' %>
-  <%= link_to "個人資料", user_registration_path, class: 'nav-link' %>
-  <% if current_user.cart %>
-    <%= link_to "我的購物車", cart_path, class: 'nav-link' %>
-  <%end%>  
-<%end%>
-
+<%# 首頁 %>
+<%= render 'shared/frontend/index' %>
+<!--
 <% @foods.each do |food| %>
   <div>
     <img src="<%=food.picture%>" alt="">
     名稱:<%= food.title %>
-    地區:<%= food.address %>   <!-- #到時候在修正成只顯示區域 -->
+    地區:<%= food.address %>    #到時候在修正成只顯示區域 
     數量:<%= food.quantity %>
     可領取時間：<%= food.pickup_time %> ～ <%= food.endup_time %>
     原始價:<%= food.origin_price %>
@@ -27,7 +19,7 @@
     <% end %>
   </div>
 <% end %>
-  <%= link_to "新增po文", new_food_path, class:'btn btn-primary' %> <!-- #到時後會放在navbar -->
+  <%= link_to "新增po文", new_food_path, class:'btn btn-primary' %>  #到時後會放在navbar -->
 
 
 
