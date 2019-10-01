@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
+<<<<<<< HEAD
     <div class="container_body">  
       <%= render 'shared/frontend/navbar' %>
       
@@ -25,6 +26,19 @@
         <% end %>
         <%= yield %>
       </div>
+=======
+    <%= render 'shared/frontend/navbar' %>
+    <% if params[:controller] == 'foods' && params[:action] == 'search' %>
+      <%= stylesheet_link_tag 'foods', media: 'all' %>
+    <% end %>
+     <% if params[:controller] == 'foods' && params[:action] == 'new' || 'edit' %>
+      <%= stylesheet_link_tag 'foods', media: 'all' %>
+    <% end %>
+    <% if params[:controller] == 'foods' && params[:action] == 'index'%>
+      <%= stylesheet_link_tag 'foods', media: 'all' %>
+    <% end %>
+    <%= yield %>
+>>>>>>> feature/reCAPTCHA_v2
 
     </div>  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
